@@ -76,7 +76,8 @@ button {
 .cart {
 	background-color: #f2f2f2;
 	border-radius: 12px;
-	padding: 2em;
+	padding: 1em;
+	max-width: 420px;
 
 	display: flex;
 	flex-direction: column;
@@ -98,8 +99,9 @@ button {
 
 			img {
 				width: 50%;
+				min-width: 120px;
 				max-width: 230px;
-				height: auto;
+				height: 100%;
 				object-fit: cover;
 
 				border-radius: 12px;
@@ -107,6 +109,7 @@ button {
 
 			&__data {
 				width: 100%;
+				
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
@@ -116,7 +119,8 @@ button {
 				}
 				
 				&__dynamic-counter {
-					width: 50%;
+					width: calc(33vw + 1em);
+					max-width: 150px;
 					
 
 					&__wrapper {
@@ -125,20 +129,29 @@ button {
 						align-items: center;
 						border: 1px solid #828282;
 						border-radius: 12px;
-						padding: .9em 1.5em;
+						padding: .9em .5em;
 						
 						span {
+							font-family: 'Montserrat', serif;
+							min-width: 30%;
+							padding: 0 1em;
 							flex-grow: 1;
 							text-align: center;
-							color: black;
+							color: #333333;
+							font-size: 1rem;
+							font-weight: 600;
 						}
 						
 						button {
-							width: 21px;
-							height: 21px;
+							font-family: 'Montserrat', serif;
+							width: 25px;
+							height: 25px;
 							border-radius: 3px;
 							background-color: #E0E0E0;
 							color: #828282;
+							font-weight: 600;
+							font-size: 1.2rem;
+							
 						}
 						
 					}
