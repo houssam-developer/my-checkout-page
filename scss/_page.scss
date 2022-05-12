@@ -34,6 +34,11 @@ svg {
 	fill: #828282;
 }
 
+button {
+	border: none;
+	cursor: pointer;
+}
+
 .checkout-form {
 	display: flex;
 	flex-direction: column;
@@ -62,9 +67,83 @@ svg {
 			border: none;
 			border-radius: 10px;
 			cursor: pointer;
-
 			font-size: 16px;
 			line-height: 20px;
+		}
+	}
+}
+
+.cart {
+	background-color: #f2f2f2;
+	border-radius: 12px;
+	padding: 1em;
+
+	display: flex;
+	flex-direction: column;
+	gap: 4em;
+
+	& * {
+		font-size: .9rem;
+		color: #4E5150;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 2em;
+		&__item {
+			display: flex;
+			gap: 1em;
+
+			img {
+				min-width: 50%;
+				width: 50%;
+				height: auto;
+				object-fit: cover;
+
+				border-radius: 12px;
+			}
+
+			&__data {
+				
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+				&__details {
+
+				}
+				
+				&__dynamic-counter {
+					
+					display: flex;
+					justify-content: center;
+
+					&__wrapper {
+						width: 100%;
+						display: flex;
+						justify-content: space-evenly; 
+						align-items: center;
+						border: 1px solid #828282;
+						border-radius: 12px;
+						padding: .9em 1.5em;
+
+						span {
+							flex-grow: 1;
+							text-align: center;
+							color: black;
+						}
+
+						button {
+							width: 21px;
+							height: 21px;
+							border-radius: 3px;
+							background-color: #E0E0E0;
+							color: #828282;
+						}
+					}
+				}
+			}
 		}
 	}
 }
