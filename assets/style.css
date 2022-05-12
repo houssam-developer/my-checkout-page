@@ -167,6 +167,23 @@ button {
   font-weight: 600;
   font-size: 1.2rem;
 }
+.cart-description-shipping, .cart-description-total {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #bdbdbd;
+  padding: 0.7em 0em;
+}
+.cart-description-shipping p, .cart-description-total p {
+  font-size: 14px;
+  color: #333333;
+}
+.cart-description-shipping span, .cart-description-total span {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: right;
+}
 
 .form-group {
   display: flex;

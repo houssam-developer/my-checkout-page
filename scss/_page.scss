@@ -159,6 +159,30 @@ button {
 			}
 		}
 	}
+
+	&-description {
+
+		&-shipping,
+		&-total{
+			display: flex;
+			justify-content: space-between;
+			border-top: 1px solid #bdbdbd;
+			padding: .7em 0em;
+			
+			p {
+				font-size: 14px;
+				color: #333333;
+			}
+
+			span {
+				font-size: 14px;
+				font-weight: 600;
+				line-height: 17px;
+				letter-spacing: 0em;
+				text-align: right;
+			}
+		}
+	}
 }
 
 .form-group {
