@@ -5,7 +5,7 @@
 	gap: 2em;
 } 
 
-h1, h2, p, label {
+h1, h2, p, label, input {
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	font-weight: 600;
 	letter-spacing: 0em;
@@ -35,6 +35,9 @@ svg {
 }
 
 .checkout-form {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
 	
 	.client-information {
 		display: flex;
@@ -46,6 +49,22 @@ svg {
 			display: flex;
 			flex-direction: column;
 			gap: .5em;
+		}
+	}
+
+	&__control-wrapper {
+		display: flex;
+		justify-content: flex-end;
+		&__button {
+			padding: .7em 2em;
+			background-color: #F2994A;
+			color: #fff;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+
+			font-size: 16px;
+			line-height: 20px;
 		}
 	}
 }
