@@ -31,6 +31,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2em;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 h1, h2, p, label, input {
@@ -67,6 +69,18 @@ button {
   cursor: pointer;
 }
 
+.checkout-form-content {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 3em;
+}
+@media screen and (min-width: 920px) {
+  .checkout-form-content {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
 .checkout-form {
   display: flex;
   flex-direction: column;
@@ -76,6 +90,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 3em;
+  max-width: 500px;
 }
 .checkout-form .client-information .contact-information,
 .checkout-form .client-information .shipping-information {
@@ -278,6 +293,19 @@ button {
   font-size: 12px;
   line-height: 15px;
   color: #4F4F4F;
+}
+
+footer {
+  align-self: center;
+  text-align: center;
+  padding: 1em;
+  color: rgb(116, 116, 116);
+}
+footer p {
+  font-weight: 400;
+}
+footer span {
+  font-weight: 700;
 }
 
 .hidden {

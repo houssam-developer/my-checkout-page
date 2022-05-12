@@ -3,6 +3,9 @@
 	display: flex;
 	flex-direction: column;
 	gap: 2em;
+
+	max-width: 1000px;
+	margin: 0 auto;
 } 
 
 h1, h2, p, label, input {
@@ -39,16 +42,27 @@ button {
 	cursor: pointer;
 }
 
+.checkout-form-content {
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 3em;
+
+	@media screen and (min-width: 920px) {
+		flex-direction: row;
+		align-items: flex-start;
+	}
+}
 .checkout-form {
 	display: flex;
 	flex-direction: column;
 	gap: 1em;
 	
+	
 	.client-information {
 		display: flex;
 		flex-direction: column;
 		gap: 3em;	
-
+		max-width: 500px;
 		.contact-information, 
 		.shipping-information {
 			display: flex;
@@ -292,4 +306,14 @@ button {
 		line-height: 15px;
 		color:#4F4F4F;
 	}
+}
+
+footer {
+	align-self: center;
+	text-align: center; 
+	padding: 1em;
+	color: rgb(116, 116, 116);
+	
+	& p { font-weight: 400; }
+	& span {	font-weight: 700; }
 }
