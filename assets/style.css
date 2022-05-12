@@ -33,7 +33,7 @@ body {
   gap: 2em;
 }
 
-h1, h2, label {
+h1, h2, p, label {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   font-weight: 600;
   letter-spacing: 0em;
@@ -57,23 +57,15 @@ label {
 }
 
 svg {
-  width: 14px;
-  height: 14px;
-  min-width: 14px;
-  min-height: 14px;
+  width: 24px;
+  height: 24px;
   fill: #828282;
-}
-@media screen and (min-width: 500px) {
-  svg {
-    width: 24px;
-    height: 24px;
-  }
 }
 
 .checkout-form .client-information {
   display: flex;
   flex-direction: column;
-  gap: 2em;
+  gap: 3em;
 }
 .checkout-form .client-information .contact-information,
 .checkout-form .client-information .shipping-information {
@@ -86,17 +78,6 @@ svg {
   display: flex;
   flex-direction: column;
   gap: 0.3em;
-}
-
-.input-wrapper {
-  min-height: 7vh;
-  padding: 0em 0.5em;
-  background-color: #fff;
-  border: 1px solid #828282;
-  border-radius: 0.6em;
-}
-.input-wrapper:focus-within {
-  border-color: orange;
 }
 
 .form-group-splitted {
@@ -116,9 +97,17 @@ svg {
 }
 
 .input-wrapper {
+  min-height: 7vh;
+  padding: 0em 0.5em;
+  background-color: #fff;
+  border: 1px solid #828282;
+  border-radius: 0.6em;
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 0.3em;
+}
+.input-wrapper:focus-within {
+  border-color: orange;
 }
 .input-wrapper * {
   font-family: "Montserrat", sans-serif;
@@ -140,6 +129,12 @@ svg {
 .input-wrapper__postal {
   grid-area: postal;
 }
+@media screen and (min-width: 500px) {
+  .input-wrapper {
+    padding: 0em 0.5em;
+    gap: 1em;
+  }
+}
 .input-wrapper input {
   flex-grow: 1;
   align-self: stretch;
@@ -148,6 +143,30 @@ svg {
 .input-wrapper input:focus {
   border: none;
   outline: none;
+}
+
+.checkbox-group {
+  min-height: 7vh;
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.checkbox-group input[type=checkbox] {
+  background: #FAFAFA;
+  color: #FAFAFA;
+  min-width: 21px;
+  min-height: 21px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid #828282;
+  border-radius: 5px;
+}
+.checkbox-group p {
+  font-size: 12px;
+  line-height: 15px;
+  color: #4F4F4F;
 }
 
 .hidden {
