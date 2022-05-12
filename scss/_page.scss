@@ -28,6 +28,20 @@ label {
 	line-height: 15px;
 }
 
+svg {
+	width: 14px;
+	height: 14px;
+	min-width: 14px;
+	min-height: 14px; 
+	fill: #828282;
+
+	@media screen and (min-width: 500px) {
+		width: 24px;
+		height: 24px;
+	}
+
+}
+
 .checkout-form {
 	
 	.client-information {
@@ -50,17 +64,33 @@ label {
 	gap: .3em;
 }
 
-.form-group-splitted {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-areas: 
-		'country postal'
-	;
-}
-
 .input-wrapper {
 	min-height: 7vh;
 	padding: 0em .5em;
+	background-color: #fff;
+	border: 1px solid #828282;
+	border-radius: .6em;
+}
+	
+.form-group-splitted {
+	display: flex;
+	gap: 1em;
+
+	div, input {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis; 
+	}
+
+	select {
+		max-width: 20px;
+		transform: scale(.8);
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.input-wrapper {
 	
 	& * {
 		font-family: 'Montserrat', sans-serif;
@@ -75,7 +105,7 @@ label {
 			line-height: 20px;
 		}
 	}
-
+ 
 	&__country {
 		grid-area: country;
 	}
@@ -83,19 +113,10 @@ label {
 		grid-area: postal;
 	}
 
-	background-color: #fff;
-	border: 1px solid #828282;
-	border-radius: .6em;
-
+	
 	display: flex;
 	align-items: center;
 	gap: 1em;
-
-	svg {
-		width: 24px;
-		height: 24px;
-		fill: #828282;
-	}
 	
 	input {
 		flex-grow: 1;
@@ -103,17 +124,4 @@ label {
 		border: none;
 	}
 
-	&--small {
-		
-
-		& svg {
-			width: 14px;
-			height: 14px;
-		}
-		& * {
-			flex-grow: 0;
-			
-		}
-
-	}
 }

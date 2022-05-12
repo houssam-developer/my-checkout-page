@@ -56,6 +56,20 @@ label {
   line-height: 15px;
 }
 
+svg {
+  width: 14px;
+  height: 14px;
+  min-width: 14px;
+  min-height: 14px;
+  fill: #828282;
+}
+@media screen and (min-width: 500px) {
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
 .checkout-form .client-information {
   display: flex;
   flex-direction: column;
@@ -74,18 +88,31 @@ label {
   gap: 0.3em;
 }
 
-.form-group-splitted {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "country postal";
-}
-
 .input-wrapper {
   min-height: 7vh;
   padding: 0em 0.5em;
   background-color: #fff;
   border: 1px solid #828282;
   border-radius: 0.6em;
+}
+
+.form-group-splitted {
+  display: flex;
+  gap: 1em;
+}
+.form-group-splitted div, .form-group-splitted input {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.form-group-splitted select {
+  max-width: 20px;
+  transform: scale(0.8);
+  display: flex;
+  justify-content: center;
+}
+
+.input-wrapper {
   display: flex;
   align-items: center;
   gap: 1em;
@@ -110,22 +137,10 @@ label {
 .input-wrapper__postal {
   grid-area: postal;
 }
-.input-wrapper svg {
-  width: 24px;
-  height: 24px;
-  fill: #828282;
-}
 .input-wrapper input {
   flex-grow: 1;
   align-self: stretch;
   border: none;
-}
-.input-wrapper--small svg {
-  width: 14px;
-  height: 14px;
-}
-.input-wrapper--small * {
-  flex-grow: 0;
 }
 
 .hidden {
