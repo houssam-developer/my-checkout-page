@@ -95,6 +95,9 @@ svg {
   border: 1px solid #828282;
   border-radius: 0.6em;
 }
+.input-wrapper:focus-within {
+  border-color: orange;
+}
 
 .form-group-splitted {
   display: flex;
@@ -141,6 +144,10 @@ svg {
   flex-grow: 1;
   align-self: stretch;
   border: none;
+}
+.input-wrapper input:focus {
+  border: none;
+  outline: none;
 }
 
 .hidden {

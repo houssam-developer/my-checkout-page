@@ -70,6 +70,10 @@ svg {
 	background-color: #fff;
 	border: 1px solid #828282;
 	border-radius: .6em;
+
+	&:focus-within {
+		border-color: orange;
+	}
 }
 	
 .form-group-splitted {
@@ -122,6 +126,11 @@ svg {
 		flex-grow: 1;
 		align-self: stretch;
 		border: none;
+
+		&:focus {
+			border: none;
+			outline: none;
+		}
 	}
 
 }
