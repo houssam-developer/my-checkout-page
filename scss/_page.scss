@@ -220,21 +220,22 @@ button {
 
 
 .form-group-splitted {
+	width: 100%;
 	display: flex;
 	gap: 1em;
 
-	div, input {
+	div, input, select {
+		flex-grow: 1;
 		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis; 
 	}
 
-	select {
-		max-width: 20px;
-		transform: scale(.8);
-		display: flex;
-		justify-content: center;
-	}
+	select, input {
+		
+		background-color: inherit;
+		color: #828282;
+	} 
 }
 
 .input-wrapper {
@@ -261,13 +262,6 @@ button {
 			line-height: 20px;
 		}
 	}
- 
-	&__country {
-		grid-area: country;
-	}
-	&__postal {
-		grid-area: postal;
-	}
 
 	
 	display: flex;
@@ -279,17 +273,19 @@ button {
 		gap: 1em;
 	}
 	
-	input {
-		flex-grow: 1;
+	input, select {
+		flex: 1;
 		align-self: stretch;
 		border: none;
-
 		&:focus {
 			border: none;
 			outline: none;
 		}
 	}
+}
 
+.postal-code {
+	max-width: 50%;
 }
 
 .checkbox-group {

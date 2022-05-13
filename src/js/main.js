@@ -32,7 +32,7 @@ tsForm.addEventListener('submit', (event) => {
 		alertNotif.classList.add("show");
 		alertNotif.classList.remove("hide");
 		alertNotif.classList.add("showAlert");
-		setTimeout(function () {
+		setTimeout(() => {
 		  alertNotif.classList.remove("show");
 		  alertNotif.classList.add("hide");
 		}, 5000);

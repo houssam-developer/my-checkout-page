@@ -24,6 +24,7 @@ body {
   /* background-color: #aff1da; */
   min-height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .page {
@@ -220,19 +221,19 @@ button {
 }
 
 .form-group-splitted {
+  width: 100%;
   display: flex;
   gap: 1em;
 }
-.form-group-splitted div, .form-group-splitted input {
+.form-group-splitted div, .form-group-splitted input, .form-group-splitted select {
+  flex-grow: 1;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.form-group-splitted select {
-  max-width: 20px;
-  transform: scale(0.8);
-  display: flex;
-  justify-content: center;
+.form-group-splitted select, .form-group-splitted input {
+  background-color: inherit;
+  color: #828282;
 }
 
 .input-wrapper {
@@ -262,26 +263,24 @@ button {
     line-height: 20px;
   }
 }
-.input-wrapper__country {
-  grid-area: country;
-}
-.input-wrapper__postal {
-  grid-area: postal;
-}
 @media screen and (min-width: 500px) {
   .input-wrapper {
     padding: 0em 0.5em;
     gap: 1em;
   }
 }
-.input-wrapper input {
-  flex-grow: 1;
+.input-wrapper input, .input-wrapper select {
+  flex: 1;
   align-self: stretch;
   border: none;
 }
-.input-wrapper input:focus {
+.input-wrapper input:focus, .input-wrapper select:focus {
   border: none;
   outline: none;
+}
+
+.postal-code {
+  max-width: 50%;
 }
 
 .checkbox-group {
