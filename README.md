@@ -8,11 +8,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://my-checkout-page-he.netlify.app/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/houssam-developer/my-checkout-page">
       Solution
     </a>
     <span> | </span>
@@ -36,22 +36,19 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![My Image](img/screenshot-demo.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+This interior consultant page can be found here: "https://recipe-page-he.netlify.app/".
+Thanks to that challenge, I learn to work efficiently in order to succeed.
+And I hope to make more beautifuls websites and become an expert in front-end developmemt :)
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- [HTML]
+- [CSS]
+- [JS]
 
 ## Features
 
@@ -59,21 +56,15 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/0J1NxxGhOUYVqihwegfO) was to build an application to complete the given user stories.
 
+Challenge: Create a checkout page following the design. You don’t need to use JS in this challenge but use correct input types and validation. Don’t look at the existing solution. Fulfill user stories below:
 
-## How To Use
+- User story: I can see a page following the given design
+- User story: I can input email, phone, full name, address, city, country, and postal code
+- User story: I can input the number of items
+- User story: I can select at least 3 countries from the dropdown
+- User story: When I click submit button or press enter, I can see a warning if validation fails
+- User story: When I click submit button or press enter, I can see a successful alert if validation succeeds
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
-
-```bash
-# Clone this repository
-$ git clone https://github.com/your-user-name/your-project-name
-
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
-```
 
 ## Acknowledgements
 
@@ -85,6 +76,5 @@ $ npm start
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- Website [my-checkout-page-he.netlify.app//](https://my-checkout-page-he.netlify.app/)
+- GitHub [@houssam-developer](https://github.com/houssam-developer/my-checkout-page)
