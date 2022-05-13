@@ -18,6 +18,7 @@ function loadTsFormData() {
 		const res = controls.every( (it) => it.value !== '' && it.checkValidity());
 		
 		if (res) {
+			alertNotif.classList.remove('hidden');
 			alertNotif.classList.add("show");
 			alertNotif.classList.remove("hide");
 			alertNotif.classList.add("showAlert");

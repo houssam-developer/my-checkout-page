@@ -150,6 +150,19 @@ button {
   flex-direction: column;
   justify-content: space-between;
 }
+.cart__list__item__data__details p {
+  color: #F2994A;
+}
+.cart__list__item__data__details span {
+  padding-left: 0.3em;
+  color: #4E5150;
+  text-decoration: line-through;
+}
+@media screen and (min-width: 400px) {
+  .cart__list__item__data__details span {
+    padding-left: 1em;
+  }
+}
 .cart__list__item__data__dynamic-counter {
   width: calc(33vw + 1em);
   max-width: 150px;

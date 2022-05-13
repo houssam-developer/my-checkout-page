@@ -129,7 +129,20 @@ button {
 				justify-content: space-between;
 
 				&__details {
+				
+					p {
+						color: #F2994A;
+					}
 
+					span {
+						padding-left: .3em;
+						color: #4E5150;						;
+						text-decoration: line-through;
+
+						@media screen and (min-width: 400px) {
+							padding-left: 1em;
+						}
+					}
 				}
 				
 				&__dynamic-counter {
