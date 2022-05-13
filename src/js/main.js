@@ -1,4 +1,6 @@
 const tsForm = document.querySelector('#myForm');
+const inputs = document.getElementsByTagName('input');
+//
 const alertNotif = document.querySelector('.alert');
 const closeBtn = document.querySelector('.close-btn');
 //
@@ -10,21 +12,13 @@ const btnMinusShoes = document.querySelector('.btnMinusShoes');
 const counterShoesElement =  document.querySelector('.counterShoes');
 const btnPlusShoes = document.querySelector('.btnPlusShoes');
 
+
 let counterShoes = 1;
 let counterBag = 1;
 
 tsForm.addEventListener('submit', (event) => {
 	event.preventDefault();
-
-	// const formData = new FormData(tsForm);
-	// console.log(`🚧 loadTsFormData() #formData `, formData);
-
-	// Array.from(formData.entries()).forEach(it => console.log(`|__ 🚧 loadTsFormData() #entry `, it))
-	const inputs = document.getElementsByTagName('input');
-
 	const controls = Array.from(inputs);
-	controls.forEach( (it, index) => console.log(`🚀 ${index} > ${it.name} ${it.checkValidity()} #value: ${it.value}`));
-
 	const res = controls.every( (it) => it.value !== '' && it.checkValidity());
 	
 	if (res) {
