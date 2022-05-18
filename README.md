@@ -38,7 +38,7 @@
 
 ![My Image](img/screenshot-demo.png)
 
-This interior consultant page can be found here: "https://my-checkout-page-he.netlify.app/".
+This checkout page can be found here: "https://my-checkout-page-he.netlify.app/".
 Thanks to that challenge, I learn to work efficiently in order to succeed.
 And I hope to make more beautifuls websites and become an expert in front-end developmemt :)
 
